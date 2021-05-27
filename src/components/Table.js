@@ -1,9 +1,9 @@
 import React from "react";
 
 // remove space from name
-function enumName(name) {
-  return name.replaceAll(" ", "");
-}
+// function enumName(name) {
+//   return name.replaceAll(" ", "");
+// }
 
 function Table(props) {
   const { headers } = props;
@@ -26,7 +26,7 @@ function Table(props) {
             return (
               <tr>
                 {headers.map((header) => (
-                  <td key={header}> {row[enumName(header)]} </td>
+                  <td key={header}> {row[(header)]} </td>
                 ))}
               </tr>
             );

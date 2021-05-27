@@ -15,12 +15,12 @@ class App extends Component {
       "highPrice",
       "lowPrice",
       "ltp",
-      "previousPrice",
+      //"previousPrice",
       "netPrice",
-      "tradedQuantity",
-      "turnoverInLakhs",
-      "lastCorpAnnouncementDate",
-      "lastCorpAnnouncement",
+      // "tradedQuantity",
+      // "turnoverInLakhs",
+      // "lastCorpAnnouncementDate",
+      // "lastCorpAnnouncement",
     ];
     this.state = {
       windowWidth: window.innerWidth,
