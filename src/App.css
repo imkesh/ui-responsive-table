@@ -1,0 +1,8 @@
+.root {
+  min-height: 100vh;
+}
+
+th,
+td {
+  padding: 0.25 rem !important;
+}
