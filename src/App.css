@@ -42,8 +42,10 @@ animation: blinker 1s linear infinite;
 
 th,
 td {
-  background: hsl(20, 58%, 66%);
   padding: 0.25 rem !important;
  
 }
+
+table tr:nth-child(n+2) {background-color: #7188b9;}
+table tr:nth-child(even) {background-color: #c4bce2;}
 
