@@ -23,13 +23,17 @@ function Table(props) {
         </thead>
         <tbody>
           {data.map((row) => {
+            
             return (
+              
               <tr>
                 {headers.map((header) => (
-                  <td key={header}> {row[(header)]} </td>
+                  <td key={header}> {row[(header)]? row[(header)]:"NAN"} </td>
                 ))}
               </tr>
             );
+            
+            
           })}
         </tbody>
       </table>

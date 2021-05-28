@@ -109,8 +109,9 @@ class App extends Component {
     const clas = `mx-0 px-0 py-0 col-${12 / dataArray.length}`;
     console.log(dataArray, clas);
     return (
-      <div className="bg-light root">
-        <h1 className="text-center text-primary py-5">
+      
+      <div class="p-3 mb-2 bg-dark text-white" >
+        <h1 class="p-3 mb-2 bg-danger text-white">
           Sample Responsive UI Project
         </h1>
         <div className="row mx-0 px-0 py-0">
@@ -126,3 +127,4 @@ class App extends Component {
 }
 
 export default App;
+
