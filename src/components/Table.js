@@ -12,7 +12,7 @@ function Table(props) {
   return (
     <div className="px-0 py-2">
       <table className="table table-bordered bg-white shadow-sm rounded">
-        <thead className="thead-dark bg-primary text-white">
+        <thead className="thead-dark bg-primary text-white" >
           <tr>
             {headers.map((header) => (
               <th scope="col" key={header}>
@@ -23,12 +23,20 @@ function Table(props) {
         </thead>
         <tbody>
           {data.map((row) => {
-            
+
+            if(row.symbol==="HINDALCO") console.log(row["lowPrice"]);
             return (
               
-              <tr>
+              <tr 
+              //   className={
+              //   //row.highlight ? "highlight" : ""
+              //   //row.symbol==="HINDALCO" ? "highlight" : ""
+              // }
+              >
+
                 {headers.map((header) => (
-                  <td key={header}> {row[(header)]? row[(header)]:"NAN"} </td>
+                  <td className={row.symbol==="HINDALCO" && header==="highPrice" ? "highlight" : ""}
+                  key={header}> {row[(header)]? row[(header)]:"NAN"} </td>
                 ))}
               </tr>
             );

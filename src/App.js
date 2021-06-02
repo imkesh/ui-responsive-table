@@ -107,7 +107,11 @@ class App extends Component {
     const { headers } = this.state;
     const { dataArray } = this.state;
     const clas = `mx-0 px-0 py-0 col-${12 / dataArray.length}`;
-    console.log(dataArray, clas);
+ 
+    // for(var i=0;i<dataArray[0].length;++i){ 
+    //   if(dataArray[0][i].symbol==="HINDALCO") console.log("data printing", dataArray[0][i].highPrice);
+    // }
+  
     return (
       
       <div class="p-3 mb-2 bg-dark text-white" >
@@ -117,7 +121,9 @@ class App extends Component {
         <div className="row mx-0 px-0 py-0">
           {dataArray.map((data) => (
             <div className={clas}>
-              <Table data={data} headers={headers} />
+              <Table data={data} headers={headers} 
+              
+              />
             </div>
           ))}
         </div>

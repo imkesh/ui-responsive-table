@@ -1,6 +1,6 @@
 export const data = [
   {
-    
+   
     symbol: "POWERGRID",
     series: "EQ",
     openPrice:"233.20",
@@ -16,6 +16,7 @@ export const data = [
   },
   
   {
+    highlight:true,
     symbol:"HINDALCO",
     series:"EQ",
     openPrice:"389.25",

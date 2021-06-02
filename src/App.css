@@ -1,9 +1,15 @@
+
 div{
   color:rgb(80, 19, 19);
   min-height: 100vh;
-  overflow-x: auto;
+  overflow-x:auto;
 
 }
+
+.highlight{
+background: rgb(37, 200, 133) !important;
+}
+
 
 h1 {
   color:rgb(243, 235, 235);
@@ -47,6 +53,7 @@ td {
  
 }
 
-table tr:nth-child(n+2) {background-color: #7188b9;}
-table tr:nth-child(even) {background-color: #c4bce2;}
+
+table tr:nth-child(odd) {background-color: #71aeb9;}
+table tr:nth-child(even) {background-color: #b62b3d;}
 
